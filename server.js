@@ -30,6 +30,9 @@ mongoose
 
 //ROUTES
 
+app.use("/", (req, res) => {
+  res.send("Welcome to the CA Website Backend");
+});
 app.use("/", PhoneNumberRouter);
 app.use("/", ArticleRouter);
 app.use("/", EnquiryRouter);
